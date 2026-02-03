@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Grades</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Student Grades</h1>
+      <p id="subtitle">Open the QR or paste link with your token (example: ?id=b8s3f9x2)</p>
+    </header>
+
+    <section id="content" aria-live="polite">
+      <div id="loading" class="card">Loading…</div>
+      <div id="error" class="card hidden"></div>
+
+      <div id="student" class="card hidden">
+        <h2 id="student-name"></h2>
+        <button id="print-btn">Print</button>
+        <table id="grades-table">
+          <thead><tr><th>Subject</th><th>Score</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <div class="meta">ID: <code id="student-id"></code></div>
+      </div>
+
+      <div id="noid" class="card hidden">
+        <p>No student ID provided. Scan your QR code or open the link given to you.</p>
+      </div>
+    </section>
+
+    <footer>
+      <small>Teacher view: generate tokens & JSON files then upload to /data/</small>
+    </footer>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
