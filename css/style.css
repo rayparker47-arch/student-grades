@@ -1,0 +1,31 @@
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  margin:0;
+  color:#111;
+}
+.container{
+  max-width:760px;
+  margin:28px auto;
+  padding:16px;
+}
+header h1{margin:0 0 4px 0}
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 6px 18px rgba(20,20,40,0.06);
+  margin:12px 0;
+}
+.hidden{display:none}
+#grades-table{width:100%;border-collapse:collapse;margin-top:12px}
+#grades-table th,#grades-table td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+#grades-table th{background:#fafafa}
+#student .meta{margin-top:8px;color:var(--muted)}
+#print-btn{margin-left:8px;padding:6px 10px;border-radius:8px;border:1px solid #ccc;background:#fff;cursor:pointer}
