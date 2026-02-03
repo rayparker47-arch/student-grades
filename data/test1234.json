@@ -1,0 +1,8 @@
+{
+  "name": "Test Student",
+  "grades": {
+    "Math": 90,
+    "Science": 88,
+    "English": 92
+  }
+}
